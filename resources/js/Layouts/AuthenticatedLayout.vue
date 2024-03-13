@@ -35,10 +35,10 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink href="/ClassManagement">
                                     課程管理
                                 </NavLink>
-                                <NavLink href="" >
+                                <NavLink href="/TeacherManagement" >
                                     教師管理
                                 </NavLink>
-                                <NavLink href="" >
+                                <NavLink href="/Addclass" >
                                     學期排課
                                 </NavLink>
                             </div>

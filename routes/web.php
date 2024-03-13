@@ -4,7 +4,9 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AddclassController;
 use App\Http\Controllers\ClassManagementController;
+use App\Http\Controllers\TeacherManagementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,8 +32,10 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+// 新增的vue頁面
 Route::get('/ClassManagement', [ClassManagementController::class, 'index'])->name('ClassManagement');
-Route::get('/ClassManagement', [ClassManagementController::class, 'index'])->name('ClassManagement');
+Route::get('/TeacherManagement', [TeacherManagementController::class, 'index'])->name('TeacherManagement');
+Route::get('/Addclass', [AddclassController::class, 'index'])->name('Addclass');
 
 
 
