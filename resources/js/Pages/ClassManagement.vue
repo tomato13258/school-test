@@ -4,17 +4,35 @@ import { Head } from '@inertiajs/vue3';
 </script>
 
 <template>
+
     <Head title="Dashboard" />
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">儀錶板</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">課程管理</h2>
         </template>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900">課程管理!😂</div>
+                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg flex flex-col justify-center items-center">
+                    
+                    <table class=" w-[80%]">
+                        <tr class=" bg-red-400">
+                            <th>序號</th>
+                            <th>課程名稱</th>
+                            <th>課程照片</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="text-center leading-[px]">
+                            <td>1</td>
+                            <td>國文</td>
+                            <td>PIC</td>
+                            <td class="gap-5">
+                                <button class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">編輯</button>
+                                <button class="p-[5px] rounded-[5px] border-gray-800 border-[2px]">刪除</button>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
