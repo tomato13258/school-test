@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AddclassController;
+use App\Http\Controllers\ClassEditController;
+use App\Http\Controllers\AddTeacherController;
+use App\Http\Controllers\EditTeacherController;
+use App\Http\Controllers\NewAllClassController;
+use App\Http\Controllers\EditAllClassController;
 use App\Http\Controllers\ClassManagementController;
 use App\Http\Controllers\TeacherManagementController;
 
@@ -36,6 +41,13 @@ Route::get('/dashboard', function () {
 Route::get('/ClassManagement', [ClassManagementController::class, 'index'])->name('ClassManagement');
 Route::get('/TeacherManagement', [TeacherManagementController::class, 'index'])->name('TeacherManagement');
 Route::get('/Addclass', [AddclassController::class, 'index'])->name('Addclass');
+// 子頁面
+Route::get('/ClassEdit', [ClassEditController::class, 'index'])->name('ClassEdit');
+Route::get('/AddTeacher', [AddTeacherController::class, 'index'])->name('AddTeacher');
+Route::get('/EditTeacher', [EditTeacherController::class, 'index'])->name('EditTeacher');
+Route::get('/EditAllClass', [EditAllClassController::class, 'index'])->name('EditAllClass');
+Route::get('/NewAllClass', [NewAllClassController::class, 'index'])->name('NewAllClass');
+
 
 
 

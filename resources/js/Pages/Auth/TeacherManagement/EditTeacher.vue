@@ -9,7 +9,7 @@ import { Head, Link } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">課程管理</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">教師列表-編輯教師</h2>
         </template>
 
         <div class="py-12">
@@ -19,16 +19,14 @@ import { Head, Link } from '@inertiajs/vue3';
                     <table class=" w-[80%]">
                         <tr class=" bg-red-400">
                             <th>序號</th>
-                            <th>課程名稱</th>
-                            <th>課程照片</th>
+                            <th>教師姓名</th>
                             <th>操作</th>
                         </tr>
                         <tr class="text-center leading-[px]">
                             <td>1</td>
-                            <td>國文</td>
-                            <td>PIC</td>
+                            <td>Garry</td>
                             <td class="gap-5">
-                                <Link href="/ClassEdit" class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">編輯</Link>
+                                <Link href="/EditTeacher" class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">編輯</Link>
                                 <button class="p-[5px] rounded-[5px] border-gray-800 border-[2px]">刪除</button>
                             </td>
                         </tr>
