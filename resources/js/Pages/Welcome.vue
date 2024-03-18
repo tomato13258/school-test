@@ -56,15 +56,37 @@ export default {
             </template>
         </div>
 
-        <div class="max-w-7xl mx-auto p-6 lg:p-8">
-            <div class="flex justify-center items-center ">
+        <div class="max-w-7xl mx-auto p-6 lg:p-8 ">
+            <div class="flex justify-center items-center mb-[50px]">
                 <div class=" flex flex-col justify-center items-center">
                     <img :src="schoolMainIcon" alt="">
                     <div class="text-[35px] font-bold">甲鎂霸國民小學</div>
                 </div>
             </div>
 
-            <!-- z -->
+            <!-- 表單 -->
+            <div class="mb-[20px]">
+                <select class="h-[45px] text-[18px]  rounded-[5px]">
+                    <option class="hidden">請選擇學期</option>
+                    <option>113學年度上學期</option>
+                    <option>113學年度下學期</option>
+                </select>
+                <span class="mr-[60px]">學期課表</span>
+            </div>
+            <table class=" w-[800px]">
+                        <tr class=" bg-gray-400">
+                            <th>序號</th>
+                            <th>課程名稱</th>
+                            <th>授課教師</th>
+                            
+                        </tr>
+                        <tr class="text-center leading-[px]">
+                            <td>1</td>
+                            <td>國文</td>
+                            <td>Garry</td>
+                            
+                        </tr>
+                    </table>
 
             <div class="flex justify-center mt-16 px-6 sm:items-center sm:justify-between">
                 <div class="text-center text-sm sm:text-start">&nbsp;</div>

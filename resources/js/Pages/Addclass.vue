@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import { Head,Link } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -14,10 +14,13 @@ import { Head } from '@inertiajs/vue3';
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg flex flex-col justify-center items-center">
+                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg flex flex-col justify-center items-center p-[50px]">
+                    <div class="w-full pl-[200px] mb-[20px]" >
+                        <Link href="/NewAllClass" class="p-[10px] rounded-[5px]  bg-green-400 mr-[5px]">新增學期課表</Link>
+                    </div>
                     
                     <table class=" w-[80%]">
-                        <tr class=" bg-red-400">
+                        <tr class=" bg-gray-400">
                             <th>序號</th>
                             <th>學年</th>
                             <th>學期</th>
@@ -28,9 +31,9 @@ import { Head } from '@inertiajs/vue3';
                             <td>113</td>
                             <td>上</td>
                             <td class="gap-5">
-                                <button class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">寄送</button>
-                                <button class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">編輯</button>
-                                <button class="p-[5px] rounded-[5px] border-gray-800 border-[2px]">刪除</button>
+                                <button class="p-[8px] rounded-[5px]  bg-green-400 mr-[10px]">寄送</button>
+                                <Link href="/EditAllClass" class="p-[8px] rounded-[5px]  bg-blue-400 mr-[10px]">編輯</Link>
+                                <button class="p-[8px] rounded-[5px]  bg-red-400 mr-[10px]">刪除</button>
                             </td>
                         </tr>
                     </table>

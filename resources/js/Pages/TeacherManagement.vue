@@ -20,10 +20,10 @@ import EditTeacher from '@/Pages/Auth/TeacherManagement/EditTeacher.vue';
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg flex flex-col justify-center items-center p-[50px]">
                     <div class="w-full pl-[200px] mb-[20px]" >
-                        <Link href="/AddTeacher" class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">新增教師</Link>
+                        <Link href="/AddTeacher" class="p-[10px] rounded-[5px]  bg-green-400 mr-[5px]">新增教師</Link>
                     </div>
                     <table class=" w-[80%]">
-                        <tr class=" bg-red-400">
+                        <tr class=" bg-gray-400">
                             <th>序號</th>
                             <th>教師姓名</th>
                             <th>操作</th>
@@ -32,8 +32,8 @@ import EditTeacher from '@/Pages/Auth/TeacherManagement/EditTeacher.vue';
                             <td>1</td>
                             <td>Garry</td>
                             <td class="gap-5">
-                                <Link href="/EditTeacher" class="p-[5px] rounded-[5px]  border-gray-800 border-[2px] mr-[5px]">編輯</Link>
-                                <button class="p-[5px] rounded-[5px] border-gray-800 border-[2px]">刪除</button>
+                                <Link href="/EditTeacher" class="p-[8px] rounded-[5px]  bg-blue-400 mr-[10px]">編輯</Link>
+                                <button class="p-[5px] rounded-[5px] bg-red-400">刪除</button>
                             </td>
                         </tr>
                     </table>
